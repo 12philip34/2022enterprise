@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+
+    <input id="fullName" placeholder="Full name"><br>
+    <input id="age" placeholder="Age"><br>
+    <button type="submit" onclick="submitForm()">Submit</button>
+
+  
+    
+
+    <script>
+        function submitForm() {
+            // Get input values.
+            const fullName = document.getElementById('fullName').value
+            const age = document.getElementById('age').value
+
+            if (isNaN(age)) return alert('Invalid age entered')
+
+
+            if (fullName && age) {
+                // if (isNaN(age)) {
+                //     return alert('invalid age entered')
+                // }
+
+
+                // Process the form here
+                alert('we have a content')
+            } else {
+                alert('All fields are required')
+            }
+
+        
+        }
+    </script>
+</body>
+</html>
