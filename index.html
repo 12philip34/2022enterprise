@@ -5,39 +5,215 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Validation</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assest/css/style.css">
 </head>
-<body>
+<body style="height: 3000px;">
+  <div class="container">
+    <div class="header" id="sticky">
+      <div class="head-col-1">
+        <h1>food fest</h1>
+      </div>
+      <div class="head-col-2">
+        <ul>
+          <li><a  class="active" href="#home">Home</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="top-container">
+      <div class="circle-1">  </div>
+      <div class="circle-2">  </div>
+      <div class="circle-3">  </div>
+      <div class="top-content">
+        <img src="./assest/images/food-2.png" alt="">
+        <p>food-fest is a gathering place for everyone who <br>
+          believes the kitchen is at the heart of the home, <br>
+          and food is the center of a life well-lived.</p>
+      </div>
+    </div>
+    <div class="middle-container"data-aos="fade-up"
+    data-aos-anchor-placement="center-bottom">
+        <div class="grid">
+         <div class="grid-1">
+           <div class="col">
+            <img src="./assest/images/food-1.png" alt="">
+            <h4>the factory</h4>
+            <p>A very-handy factory from the <br>
+               maker of your fave cake stand.</p>
+           </div>
+           <div class="col">
+             <img src="./assest/images/food-3.png" alt="">
+             <h4>seasoning</h4>
+             <p>best seasonings ever find <br>
+                and ever used </p>
+           </div>
+           <div class="col"></div>
+         </div>
+         <div class="grid-2">
+           <img src="./assest/images/restaur-1.png" alt="">
+           <div class="background">
+            <h3>
+              shop next...
+            </h3>
+            <p>
+              where do you want to eat next. <br>
+              well,we are all round and every where so, <br>
+              shop here and shop next.
+            </p>
+           </div>
+         </div>
+         <div class="grid-3">
+          <div class="col">
+            <img src="./assest/images/food-2.png" alt="">
+           <h4>paddy</h4>
+           <p>crapy paddy, order yours now <br>
+            we are always ready to serve you <br>
+            with our best snacks
 
-    <input id="fullName" placeholder="Full name"><br>
-    <input id="age" placeholder="Age"><br>
-    <button type="submit" onclick="submitForm()">Submit</button>
+          </div>
+          <div class="col">
+            <img src="./assest/images/food-4.png" alt="">
+            <h4>ingredient</h4>
+            <p>
+              what do you think we have <br>
+              good ingredient that well <br>
+              make you be on the world...
+            </p>
+          </div>
+          <div class="col"></div>
+           </p>
+         </div>
+        </div>
+  </div>
+  <div class="bottom-container"data-aos="fade-up"
+  data-aos-anchor-placement="center-bottom">
+   <div class="category">
+    <h1>New to
+      <span>The Shop</span></h1>
+      <hr style="width: 12%; margin: 0 auto;">
+      <br>
+      <br>
+      <p>Our newest additions that we can't stop talking about</p>
+      <div class="row 0902913138">
+        <div class="col"><img src="./assest/images/682-6821620_real-kids-cooking-tools-curious-chef-kitchen-utensils.png" alt=""></div>
+        <div class="col"><img src="./assest/images/kindpng_15562.png" alt=""></div>
+        <div class="col"><img src="./assest/images/kit.png" alt=""></div>
+        <div class="col"><img src="./assest/images/kitt.png" alt=""></div>
+        <div class="col"><img src="./assest/images/utten.png" alt=""></div>
+      </div>
+   </div>
+   <div class="video">
+     <div class="text">
+       <h4>featured cooked</h4>
+       <p>are you ready to be amazed by the cook? <br>
+        cook with us, eat with us, drinks with us <br>
+        best served
 
-  
+       </p>
+     </div>
+     <div class="videos-text">
+      <video src="./assest/videos/mixkit-cooking-asian-food-9286-medium.mp4" controls></video>
+     </div>
     
+   </div>
+  </div>
+  <div class="footer-container">
+    <div class="pargination">
+       <div class="first">
+        <div class="col">
+          <h4>
+            the most reliable hand mixers, 
+            according to bakers
+          </h4>
+            <p>
+              For kneading bread dough, whipping eggs,
+              creaming butter and sugar, and so much more.
+            </p> 
+        </div>
+        <div class="col">
+          <h4>
+           how to clean your garbage disposal &
+           stave off the junk for good
+          </h4>
+            <p>
+              It's time to clean up the ultimate clean-up tool.
+            </p> 
+        </div>
+      </div>
+      <div class="second">
+        <div class="slideshow-container">
 
-    <script>
-        function submitForm() {
-            // Get input values.
-            const fullName = document.getElementById('fullName').value
-            const age = document.getElementById('age').value
-
-            if (isNaN(age)) return alert('Invalid age entered')
-
-
-            if (fullName && age) {
-                // if (isNaN(age)) {
-                //     return alert('invalid age entered')
-                // }
-
-
-                // Process the form here
-                alert('we have a content')
-            } else {
-                alert('All fields are required')
-            }
-
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="./assest/images/slider-2.png" style="width:100%; border-radius: 20px;">
+          <div class="text">Caption Text</div>
+        </div>
         
-        }
-    </script>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img src="./assest/images/slider-6.png" style="width:100%; border-radius: 20px;">
+          <div class="text">Caption Two</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src= "./assest/images/slider-1.png" style="width:100%; border-radius: 20px;">
+          <div class="text">Caption Three</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <img src= "./assest/images/slider-4.png" style="width:100%; border-radius: 20px;">
+          <div class="text">Caption Three</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <img src= "./assest/images/slider-5.png" style="width:100%; border-radius: 20px;">
+          <div class="text">Caption Three</div>
+        </div>
+        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+          <span class="dot" onclick="currentSlide(5)"></span> 
+        </div>
+        
+       
+      </div>
+      <div class="third">
+<div class="col">
+  <img style="width: 100%; border-radius: 20px;" src="./assest/images/mixer.png" alt="">
+</div>
+<div class="col">
+  <img style="width: 100%; border-radius: 20px;" src="./assest/images/disposal.png" alt="">
+</div>
+      </div>
+  </div>
+  </div>
+  <div class="main-footer">
+    <div class="food-foot">
+     <h3>food-fest</h3>
+     <a href="">twitter</a>
+     <a href="">whatsapp</a>
+     <a href="">facebook</a>
+    </div>
+    <div class="links">
+      <h1>
+        Our best tips for eating thoughtfully
+         and living joyfully, right to your inbox
+      </h1>
+    </div>
+  </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assest/js/java.js"></script>
 </body>
 </html>
